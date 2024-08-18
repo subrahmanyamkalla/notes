@@ -90,7 +90,7 @@ a user must have atleast one primary and one secondary group
 
 usermod -g ramesh ramesh
 userdel ramesh --> ramesh user and ramesh group both will be deleted
-
+userdel -r ramesh (it will delete same user from home directory also so you can create same username after deleted if you want)
 groupdel
 
 suresh, suresh123
