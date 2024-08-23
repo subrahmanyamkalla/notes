@@ -97,3 +97,8 @@ Frontend proxy, reverse proxy
 1. Book the domain
 2. Understand what is A record
 3. Install nginx and you should see welcome page with your domain name
+
+
+
+---to check logs ---
+tail -f var/log/messages
