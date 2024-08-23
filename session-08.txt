@@ -101,4 +101,4 @@ Frontend proxy, reverse proxy
 
 
 ---to check logs ---
-tail -f var/log/messages
+tail -f /var/log/messages
