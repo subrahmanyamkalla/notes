@@ -74,6 +74,10 @@ DNS resolver connects with TLD address... address is nothing but nameservers
 
 mysql -h mysql.daws78s.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
 
+after DNS name (website name configured) that name we can check with below command to check connectivity 
+
+nslookup domain_name
+
 
 proxy_http_version 1.1;
 

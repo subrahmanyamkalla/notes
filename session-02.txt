@@ -3,7 +3,7 @@ Session-02
 Recap
 what is devops?
 waterfall vs agile vs devops
-SDLC
+SDLC (software development life cycle)
 what is computer
 client server architecture
 Linux advantages
