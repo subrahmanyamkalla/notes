@@ -43,6 +43,8 @@ X -> 1
 
 Linux Administration
 --------------------------
+----------see session -5 recap covered this session task---------------
+
 sudo su --> super user access
 
 create user
@@ -101,7 +103,16 @@ inform suresh, that his user is creatd
 
 by default, linux OS will not allow password authentication, it will only allow key based authentication
 
+----Password base authentication-----
+vim /etc/ssh/sshd_config
+
+authentication password: yes (change if no)
+
 systemctl restart sshd
+
+now all files will be on suresh name
+
+--------ssh key base authentication for user------
 
 /home/suresh
 
@@ -115,9 +126,13 @@ Ownership
 -------------------
 chown --> change ownership
 
+chown -R username:username .ssh (it will change ownership from root to user in user system after given permissions.
+
 private key, suresh
 
 /home/suresh --> authorized_keys
+
+chmod 700 .ssh 
 
 directory --> 700
 authorized_keys --> 400

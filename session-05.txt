@@ -13,7 +13,7 @@ ssh -i ramesh ramesh@IP
 .ssh --> 600
 authorized_keys --> 400
 
-Package management
+-----Package management----
 ------------------------
 A software have lot of dependencies on other softwares
 
@@ -28,10 +28,20 @@ dnf install
 
 dnf list installed
 
+dnf list available (to check available packages)
+
+dnf list installed | wc -l (to know the word count also)
+
+dnf remove packagename (to remove installed package)
+
+
+
+
+
 how can check cpuinfo, memory info, OS
-/etc/os-release
-/proc/cpuinfo
-/proc/meminfo
+cat /etc/os-release (os information)
+cat /proc/cpuinfo (processor info)
+cat /proc/meminfo (ram info)
 
 Service Management
 ---------------------------
@@ -45,6 +55,12 @@ Nginx --> install this package
 start the service
 
 dnf install nginx -y
+
+systemctl start nginx
+
+systemctl status nginx
+
+systemctl enable nginx (means when system starts automatically nginx serive will start without start again manually otherwise we can use disable)
 
 http://54.198.23.187:80
 
@@ -94,23 +110,49 @@ Child 005 --> 004(Parent)
 002 --> 001
 001 --> Root Process
 
-nginx --> PID should be there
+nginx --> PID should be there (when running in service like nginx)
 
 ps -ef | grep nginx
 
-foreground --> BLOCKS the screen, runs in foreground
-background --> runs in background, you can do other works
+foreground --> BLOCKS the screen
+sleep 10 (it will sleep 10 sec so we cant do any work on terminal this called foreground)
+screen, runs in foreground
+
+background --> runs in 
+background, you can do other works
+"sleep 100 &"
+(it will run background so we can do work )
+to check background running 
+ps -ef | grep sleep
 
 
-top
+top (to check process consuming space like cpu memory)
+
+pid - process id
+ppid - parent process id
+
+
+
+1 -- called root process (origin)
 
 kill --> request
-kill -9 --> order
+to kill unsed process which is running background there is no use with that so we can kill that service
+with below command)
+
+kill pid  (process id ----- this request) 
+
+kill -9 --> order ( this is order)
+(to kill pid forcefully) 
+
 
 Network Management
 -----------------------
 ports check
 
 netstat --> network statistics
+
+netstat -l
+
+netstat -lt
 
 netstat -lntp --> it will tell you what ports are open
