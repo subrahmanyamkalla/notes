@@ -28,7 +28,8 @@ mkdir
 rmdir
 rm
 mv
-uname
+uname (kername name)
+uname -a(server information)
 
 how to copy files
 
@@ -41,8 +42,11 @@ cp <source-file> <destination-file>
 
 how to cut the file
 
-grep <word-to-find> <file>
-DevOps devops both are different
+grep <word-to-find> <file> (to find the word from large text on terminal)
+
+grep -i <word> file (this will tell you case sensitive and insensitive means upper case letters and lower case letters words)
+
+ex: DevOps devops both are different
 
 How to download the files?
 
@@ -58,29 +62,31 @@ https://raw.githubusercontent.com/daws-81s/notes/main/session-02.txt
 
 Sivakumar Reddy
 
-cut command, delimiter
+cut command, delimiter 
 
-cut -d "/" -f1
+cut -d "/" -f1 ( d- delimiter, f1 - fragment-1 means word1, to cut the sentence we can use this command)
 
 https:
-
 raw.githubusercontent.com
 daws-81s
 notes
 main
 session-02.txt
 
-awk command
+
+awk command (this is also cut command but this will cut column wise also, and if you dont know end of fragment number you can use this command)
 
 awk -F "/" '{print $1F}'
 
-awk -F "/" '{print $NF}'
+awk -F "/" '{print $NF}' (here N is using for last fragment)
 
 /etc/passwd
 
 ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
 
 How to get list of users in linux server?
+
+awk -F ":" '{print $1F}' file
 
 head and tail
 
@@ -115,6 +121,11 @@ rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
 tcpdump:x:72:72::/:/sbin/nologin
 ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
 
+yy - copy 
+
+p - paste
+
+
 How to get lines in between the 5-10
 
 cat file name | head -n 10 | tail -n 5
@@ -133,9 +144,113 @@ vim <file-name>
 Colon/Command Mode
 ---------------
 :q --> Quit
+
 :wq --> write and quit
+
 :q! --> dont save the changes and exit
-:set nu
-:set nonu
+
+:set nu (set numbers)
+
+:set nonu (no number for lines)
+
 :/<word-to-find> --> search from top
-:?<word-to-find> --> search from bottom
+
+:?<word-to-find> --> search from 
+
+:noh -------don't highlight any thing
+
+:%d ----- delete everything
+
+:1d ----- deletes first line 
+
+shift+u ---- after modification if you want to unto to save without changes)
+
+shift + g (goes to bottom in edit file)
+
+gg (goes to top in edit file)
+
+:s/sbin/SBIN (to sbin to change SBIN or replace word)
+
+:s/whichword/what-you-want/ ------ replace first occurrence if many same words is there.
+
+:s/whichword/what-you-want/g   -------- replace the all similar words
+
+
+:3s/whichword/what-you-want/g   -------- replace the word in 3rd line 
+
+:%s/whichword/what-you-want/g   -------- replace the word in all lines in file 
+
+/<word search> --- press 'n' to forward search----press 'N' to backward search
+
+ESC --- press u to undo 
+
+file filename (on terminal it will tell you what type of file it has)
+
+yy - copy 
+
+p - paste
+
+10p ---- 10 times paste
+
+dd ---- to delete line
+
+------permissions----
+-rw-r--r--
+
+rw ---- who is the owner of the file == u
+
+r ---which group he belongs to == g
+
+r--- others == 0
+
+Sivakumar, Ramesh, Rajesh ----- he is the Devops engineer
+
+brahmi, ram ----- Dev team
+
+if i create the file , I will the the owner . I am into Devops team
+
+u ---- user
+
+o ------ others
+
+g ------ group
+
+R ---- read ---- 4
+W ----write --- 2
+X ---- execute---1
+
+total 777 all access to everyone
+
+ex: chmod 750 file_name
+
+7 ---- full access for owner
+5 ---- read and execute access for group
+0 ----- no access for others
+
+who can change the permissions? Either owner or admin can change permissions
+
+when you don't assign a user to any group , his group is also same as his user name
+chmod - change modifications
+
+chmod  o+w  filename (it will give write permission to others)
+
+chmod o+x filename (execute permission)
+
+chmod o-rwx filename (to remove all permissions to others)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

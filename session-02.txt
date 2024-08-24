@@ -58,6 +58,9 @@ mysql --> 3306
 what is the protocol, port, username, password/private-key
 
 ssh-keygen -f <file-name>, I should have some client to connect Linux server
+
+ssh-keygen -t rsa
+
 gitbash, putty, mobaxterm
 
 Gitbash --> git, Linux server, Mini Linux in windows
@@ -135,6 +138,10 @@ cat file-name --> reading the text
 
 
 cat >> file-name --> append/add the text
+
+>> means adding the text as you want
+
+> means overwrite the text 
 
 
 cd .. --> one step back
