@@ -99,8 +99,35 @@ Proxy --> Someone on behalf of you
 Frontend proxy, reverse proxy
 
 1. Book the domain
-2. Understand what is A record
-3. Install nginx and you should see welcome page with your domain name
+2. Give private IP of database server in A record
+3. Understand what is A record
+4. If you want to take webhost directly move to AWS then need to NS (name servers) from
+    Hostinger to AWS route53 need to configure      
+5. Install nginx and you should see welcome page with your domain name
+
+if you want to check particular IP address assigned or not check with below command from data base server
+
+nslookup website_name (to check record names running or not)
+
+
+
+** after purchased domain name from third party or aws ...etc
+need to configure in hostzones in AWS
+
+then we will get name servers that name servers need to update in (hostinger) it will give authority to AWS by the TLD (Top Level Domain) with Root servers.
+
+it will take time to update
+after that domain name will available.
+that domain name we need to use to create sub domains with "Record create" (to get sub domain) 
+
+then we will get sub_domain/website.com 
+
+1. if you have MySQL data server from there need to take private IP address
+    that address need to use in to create record in route53.
+    then u will get MySQL.website.com 
+    this address need to mention in backend config file to connect.
+
+
 
 
 

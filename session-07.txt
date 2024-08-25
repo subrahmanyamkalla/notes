@@ -136,10 +136,12 @@ backend applications mostly opens --> 8080
 
 ping <IP>
 
-telnet <IP> 3306
+telnet <IP> 3306 (to check database server connected or not with backend)
 
 /etc/nginx --> nginx config is here
+
 /usr/share/nginx/html --> here you need to place your websites
+
 /var/log/nginx --> here nginx places the logs
 
 /usr/share/nginx/html/index.html --> load automatically when you hit IP

@@ -31,9 +31,15 @@ Reverse Proxy
 3. as load balancer..
 4. SSL termination
 
+nginx is powerfull reverse proxy server and loadbalancer also.
+
+
+
 /etc/nginx/nginx.conf --> default conf
-/usr/share/nginx/html
-/var/log/nginx
+
+/usr/share/nginx/html (website hosting files)
+
+/var/log/nginx (log files)
 
 include /etc/nginx/default.d/*.conf;
 
@@ -42,6 +48,12 @@ upstream backend {
       server 172.31.38.145;
    }
    
+after place above IP addresses
+next go to
+/etc/nginx/default.d/
+and create 
+vi load-balance.conf
+write below stuff
 proxy_http_version 1.1;
 
 location / { proxy_pass http://upstream/; }
@@ -51,11 +63,14 @@ location /health {
   access_log off;
 }
 
+here upstream replace with what you mentioned in httpd block here mentioned 
+backend so replace with that.
+
 /usr/share/nginx/html --> default
 
 IP or IP/ --> /usr/share/nginx/html/index.html
 
-Linux folder structure
+----------Linux folder structure-----------------------
 ----------
 / --> root directory of the OS
 /bin(binaries) --> essential commands are here. ls, cat, grep, etc.
@@ -131,9 +146,17 @@ if not installed, install it
 
 check success or not
 
+Check first before you install any package
+ do u have root access
+
+#check with "id" command
+
+#if uid = 1001  this is not root access
+
+if uid = 0 this is having root access
+
+
 git --> store scripts or programs
-
-
 
 
 / --> frontend website
@@ -146,3 +169,8 @@ facebook --> web servers
 
 daws81s.online
 daws81s.online/hello 
+
+
+-----------------searched reference words---------------------
+
+configure nginx load balancing 
