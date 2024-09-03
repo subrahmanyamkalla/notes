@@ -29,7 +29,7 @@ Reverse Proxy
 1. Only Server is aware of proxy
 2. Security between clients and servers
 3. as load balancer..
-4. SSL termination
+4. SSL termination (here https is required upto front end only no need to backend client can connect only front end so it will restrict sssl)
 
 nginx is powerfull reverse proxy server and loadbalancer also.
 
