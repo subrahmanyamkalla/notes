@@ -41,8 +41,8 @@ nginx is powerfull reverse proxy server and loadbalancer also.
 
 /var/log/nginx (log files)
 
-include /etc/nginx/default.d/*.conf;
-
+include /etc/nginx/default.d/*.conf;  
+###(below servers we need to place http block only)
 upstream backend {
       server 172.31.44.133; 
       server 172.31.38.145;
