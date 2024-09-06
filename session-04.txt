@@ -70,9 +70,11 @@ every user have atleast one primary group and multiple secondary groups
 usermod -g devops ramesh --> adding ramesh to devops group
 
 ramesh primary --> devops
-ramesh secondary --> testing
+
 
 usermod -aG testing ramesh --> adding ramesh to testing group as secondary
+
+ramesh secondary --> testing
 
 gpasswd -d ramesh testing --> delete ramesh from testing
 
