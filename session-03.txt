@@ -76,6 +76,8 @@ awk -F "/" '{print $1F}'
 
 awk -F "/" '{print $NF}'
 
+(here "N" is last fragment
+
 /etc/passwd
 
 ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
