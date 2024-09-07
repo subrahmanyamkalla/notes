@@ -78,7 +78,13 @@ inputs and options
 dnf  install  nginx -y
 cmd  options   inputs
 
-ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed"
+ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=present"
+
+if you again run above same command 2 times it will show nothing to do in second time.
+
+Now need to run the nginx service start
+
+ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m service -a "name=nginx state=started"
 
 -b --> become root
 
@@ -128,21 +134,27 @@ key name --> key value
 
 DTO --> data transfer objects
 
+
+XML FORMAT:
 <Signup>
 	<Name>sivakumar</Name>
 	<Email>info@joindevops.com</Email>
 </Signup>
 
+
+JSON:
 {
 	"Name": "sivakumar",
 	"Email": "info@joindevops.com"
 }
 
+json:
 {
 	"amount": 200,
 	"description": "food"
 }
 
+YAML:
 Name: sivakumar
 Email: info@joindevops.com
 
