@@ -16,10 +16,6 @@ ansible inventory
 # ansible-playbook -i inventory.ini servers --list-hosts
 
 
-
-
-
-
 ungrouped
 grouped
 group of groups
