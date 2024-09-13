@@ -1,5 +1,21 @@
 ansible inventory
 -------------------
+#1 to pick all ungroupe IP's from inventory run below command
+# ansible-playbook -i inventory.ini ungrouped --list-hosts
+
+#2 to pick all for web IP's from inventory run below command
+# ansible-playbook -i inventory.ini web --list-hosts
+
+#3 to pick all for backend IP's from inventory run below command
+# ansible-playbook -i inventory.ini backend --list-hosts
+
+#4 to pick all for mysql IP's from inventory run below command
+# ansible-playbook -i inventory.ini mysql --list-hosts
+
+#2 to pick all for servers IP's from inventory run below command
+# ansible-playbook -i inventory.ini servers --list-hosts
+
+
 ungrouped
 grouped
 group of groups
