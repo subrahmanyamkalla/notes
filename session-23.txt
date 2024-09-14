@@ -90,6 +90,8 @@ count.index --> 2
 functions
 --------------------
 Terraform has no custom functions, We must use in-built functions
+need to open so just type this command on gitbash "terraform console" 
+then min(1,2,3)
 
 merge --> merges 2 lists
 
