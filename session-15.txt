@@ -50,11 +50,14 @@ recently we migrated normal servers to ansible managed servers
 
 54.210.150.96 --> /tmp/hello.txt
 
+<<<<<<< HEAD
 Remote server connection:
 ssh -i subbuu ec2-user@50.19.143.16 -C "echo Hello > /tmp/kvs.txt"
 
 thic command will help you to connect server without direct login to create files inside
 
+=======
+>>>>>>> bed3a2a (notes)
 1. login to server
 2. move to /tmp dir
 3. create file
@@ -78,6 +81,7 @@ inputs and options
 dnf  install  nginx -y
 cmd  options   inputs
 
+<<<<<<< HEAD
 ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=present"
 
 if you again run above same command 2 times it will show nothing to do in second time.
@@ -85,6 +89,9 @@ if you again run above same command 2 times it will show nothing to do in second
 Now need to run the nginx service start
 
 ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m service -a "name=nginx state=started"
+=======
+ansible -i 172.31.41.249, all -e ansilbe_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed"
+>>>>>>> bed3a2a (notes)
 
 -b --> become root
 
@@ -134,27 +141,39 @@ key name --> key value
 
 DTO --> data transfer objects
 
+<<<<<<< HEAD
 
 XML FORMAT:
+=======
+>>>>>>> bed3a2a (notes)
 <Signup>
 	<Name>sivakumar</Name>
 	<Email>info@joindevops.com</Email>
 </Signup>
 
+<<<<<<< HEAD
 
 JSON:
+=======
+>>>>>>> bed3a2a (notes)
 {
 	"Name": "sivakumar",
 	"Email": "info@joindevops.com"
 }
 
+<<<<<<< HEAD
 json:
+=======
+>>>>>>> bed3a2a (notes)
 {
 	"amount": 200,
 	"description": "food"
 }
 
+<<<<<<< HEAD
 YAML:
+=======
+>>>>>>> bed3a2a (notes)
 Name: sivakumar
 Email: info@joindevops.com
 
@@ -171,4 +190,12 @@ the same project you automated through shell scripting
 
 
 
+<<<<<<< HEAD
 
+=======
+	Hello   world   
+	
+Hello,World
+
+IFS=,
+>>>>>>> bed3a2a (notes)

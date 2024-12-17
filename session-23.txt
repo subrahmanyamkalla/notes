@@ -54,11 +54,18 @@ using this file, we can override the default values in variables or else you can
 
 terraform.tfvars and default values
 
+<<<<<<< HEAD
 1. command line  (check with this command if you have already t2.nano- terrafrom plan -var="instance_type=t2.micro" -    this is first preference)
 2. terraform.tfvars (here we can create one terraform.tfvars file in that file we can create like instance_type = "t2.micro" so it will override the value and
 it is like second preference)
 3. environment variables (export TF_VAR_instance_type=t2.large this is environment variable it is like 3rd preference))
 4. default (4th is default)
+=======
+1. command line
+2. terraform.tfvars
+3. environment variables
+4. default
+>>>>>>> bed3a2a (notes)
 
 conditions
 --------------------
@@ -90,8 +97,11 @@ count.index --> 2
 functions
 --------------------
 Terraform has no custom functions, We must use in-built functions
+<<<<<<< HEAD
 need to open so just type this command on gitbash "terraform console" 
 then min(1,2,3)
+=======
+>>>>>>> bed3a2a (notes)
 
 merge --> merges 2 lists
 

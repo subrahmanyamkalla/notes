@@ -28,8 +28,12 @@ mkdir
 rmdir
 rm
 mv
+<<<<<<< HEAD
 uname (kername name)
 uname -a(server information)
+=======
+uname
+>>>>>>> bed3a2a (notes)
 
 how to copy files
 
@@ -42,11 +46,16 @@ cp <source-file> <destination-file>
 
 how to cut the file
 
+<<<<<<< HEAD
 grep <word-to-find> <file> (to find the word from large text on terminal)
 
 grep -i <word> file (this will tell you case sensitive and insensitive means upper case letters and lower case letters words)
 
 ex: DevOps devops both are different
+=======
+grep <word-to-find> <file>
+DevOps devops both are different
+>>>>>>> bed3a2a (notes)
 
 How to download the files?
 
@@ -62,23 +71,40 @@ https://raw.githubusercontent.com/daws-81s/notes/main/session-02.txt
 
 Sivakumar Reddy
 
+<<<<<<< HEAD
 cut command, delimiter 
 
 cut -d "/" -f1 ( d- delimiter, f1 - fragment-1 means word1, to cut the sentence we can use this command)
 
 https:
+=======
+cut command, delimiter
+
+cut -d "/" -f1
+
+https:
+
+>>>>>>> bed3a2a (notes)
 raw.githubusercontent.com
 daws-81s
 notes
 main
 session-02.txt
 
+<<<<<<< HEAD
 
 awk command (this is also cut command but this will cut column wise also, and if you dont know end of fragment number you can use this command)
 
 awk -F "/" '{print $1F}'
 
 awk -F "/" '{print $NF}' (here N is using for last fragment)
+=======
+awk command
+
+awk -F "/" '{print $1F}'
+
+awk -F "/" '{print $NF}'
+>>>>>>> bed3a2a (notes)
 
 /etc/passwd
 
@@ -86,8 +112,11 @@ ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
 
 How to get list of users in linux server?
 
+<<<<<<< HEAD
 awk -F ":" '{print $1F}' file
 
+=======
+>>>>>>> bed3a2a (notes)
 head and tail
 
 head <file-name> --> first 10lines
@@ -121,11 +150,14 @@ rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
 tcpdump:x:72:72::/:/sbin/nologin
 ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
 
+<<<<<<< HEAD
 yy - copy 
 
 p - paste
 
 
+=======
+>>>>>>> bed3a2a (notes)
 How to get lines in between the 5-10
 
 cat file name | head -n 10 | tail -n 5
@@ -144,6 +176,7 @@ vim <file-name>
 Colon/Command Mode
 ---------------
 :q --> Quit
+<<<<<<< HEAD
 
 :wq --> write and quit
 
@@ -254,3 +287,11 @@ chmod o-rwx filename (to remove all permissions to others)
 
 
 
+=======
+:wq --> write and quit
+:q! --> dont save the changes and exit
+:set nu
+:set nonu
+:/<word-to-find> --> search from top
+:?<word-to-find> --> search from bottom
+>>>>>>> bed3a2a (notes)

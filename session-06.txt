@@ -89,6 +89,7 @@ WebServer --> put that into HTML format, so that a normal can easily format
 security --> 
 Web server --> Queue management
 
+<<<<<<< HEAD
 #Web Tier --> LB, Web Servers 
 
 #App/API Tier --> App servers
@@ -103,29 +104,50 @@ Web(Frontend) Tier --> HTML, CSS, JavaScript, ReactJS, Angular, ExpressJS, Jquer
 
 Static --> Frontend applications are static --> Nginx, Apache, etc.
 
+=======
+Web Tier --> LB, Web Servers
+App/API Tier --> App servers
+Data tier --> DB Servers
+
+Databases --> MySQL, MSSQL, Oracle, Postgress, MongoDB, Redis
+App/API(Backend Tier) --> Java, Python, NodeJS, DotNet, Go, etc,
+Web(Frontend) Tier --> HTML, CSS, JavaScript, ReactJS, Angular, ExpressJS, Jquery, etc...
+
+Static --> Frontend applications are static --> Nginx, Apache, etc.
+>>>>>>> bed3a2a (notes)
 Dynamic --> Backend appliactions are dynamic --> JBoss, Webspher, WebLogic,etc. --> Tomcat
 
 Waiter, Chef, items
 
 
 devops-practice --> goto community AMI --> Redhat 9
+<<<<<<< HEAD
 
 We will use only username and password to login servers
 
 ec2-user
 
+=======
+We will use only username and password to login servers
+
+ec2-user
+>>>>>>> bed3a2a (notes)
 DevOps321 --> D and O is caps
 
 Database server
 ----------------
 install DB --> MySQL
 3306
+<<<<<<< HEAD
 
+=======
+>>>>>>> bed3a2a (notes)
 dnf install
 
 run DB --> systemctl
 
 check the status --> systemctl staus
+<<<<<<< HEAD
 
 check port opened r not --> netstat -lntp
 
@@ -133,6 +155,12 @@ check the process --> ps -ef | grep <name>
 
 username is root
 
+=======
+check port opened r not --> netstat -lntp
+check the process --> ps -ef | grep <name>
+
+username is root
+>>>>>>> bed3a2a (notes)
 password 
 
 server software is mysql-server and it is running, to check data you should connect to server through client
@@ -152,11 +180,16 @@ videos --> videos
 mysql
 
 show databases;
+<<<<<<< HEAD
 
 use <database-name>;
 
 show tables;
 
+=======
+use <database-name>;
+show tables;
+>>>>>>> bed3a2a (notes)
 select * from <table-name>;
 
 

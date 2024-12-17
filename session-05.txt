@@ -13,7 +13,11 @@ ssh -i ramesh ramesh@IP
 .ssh --> 600
 authorized_keys --> 400
 
+<<<<<<< HEAD
 -----Package management----
+=======
+Package management
+>>>>>>> bed3a2a (notes)
 ------------------------
 A software have lot of dependencies on other softwares
 
@@ -28,6 +32,7 @@ dnf install
 
 dnf list installed
 
+<<<<<<< HEAD
 dnf list available (to check available packages)
 
 dnf list installed | wc -l (to know the word count also)
@@ -42,6 +47,12 @@ how can check cpuinfo, memory info, OS
 cat /etc/os-release (os information)
 cat /proc/cpuinfo (processor info)
 cat /proc/meminfo (ram info)
+=======
+how can check cpuinfo, memory info, OS
+/etc/os-release
+/proc/cpuinfo
+/proc/meminfo
+>>>>>>> bed3a2a (notes)
 
 Service Management
 ---------------------------
@@ -56,12 +67,15 @@ start the service
 
 dnf install nginx -y
 
+<<<<<<< HEAD
 systemctl start nginx
 
 systemctl status nginx
 
 systemctl enable nginx (means when system starts automatically nginx serive will start without start again manually otherwise we can use disable)
 
+=======
+>>>>>>> bed3a2a (notes)
 http://54.198.23.187:80
 
 SG --> port no 80 allowed
@@ -110,6 +124,7 @@ Child 005 --> 004(Parent)
 002 --> 001
 001 --> Root Process
 
+<<<<<<< HEAD
 nginx --> PID should be there (when running in service like nginx)
 
 ps -ef | grep nginx
@@ -144,6 +159,20 @@ kill pid  (process id ----- this request)
 kill -9 --> order ( this is order)
 (to kill pid forcefully) 
 
+=======
+nginx --> PID should be there
+
+ps -ef | grep nginx
+
+foreground --> BLOCKS the screen, runs in foreground
+background --> runs in background, you can do other works
+
+
+top
+
+kill --> request
+kill -9 --> order
+>>>>>>> bed3a2a (notes)
 
 Network Management
 -----------------------
@@ -151,8 +180,11 @@ ports check
 
 netstat --> network statistics
 
+<<<<<<< HEAD
 netstat -l
 
 netstat -lt
 
+=======
+>>>>>>> bed3a2a (notes)
 netstat -lntp --> it will tell you what ports are open

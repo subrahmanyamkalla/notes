@@ -29,6 +29,7 @@ Reverse Proxy
 1. Only Server is aware of proxy
 2. Security between clients and servers
 3. as load balancer..
+<<<<<<< HEAD
 4. SSL termination (here https is required upto front end only no need to backend client can connect only front end so it will restrict sssl)
 
 nginx is powerfull reverse proxy server and loadbalancer also.
@@ -43,11 +44,22 @@ nginx is powerfull reverse proxy server and loadbalancer also.
 
 include /etc/nginx/default.d/*.conf;  
 ###(below servers we need to place http block only)
+=======
+4. SSL termination
+
+/etc/nginx/nginx.conf --> default conf
+/usr/share/nginx/html
+/var/log/nginx
+
+include /etc/nginx/default.d/*.conf;
+
+>>>>>>> bed3a2a (notes)
 upstream backend {
       server 172.31.44.133; 
       server 172.31.38.145;
    }
    
+<<<<<<< HEAD
 after place above IP addresses
 next go to
 /etc/nginx/default.d/
@@ -57,20 +69,32 @@ write below stuff
 proxy_http_version 1.1;
 
 location / { proxy_pass http://backend/; }
+=======
+proxy_http_version 1.1;
+
+location / { proxy_pass http://upstream/; }
+>>>>>>> bed3a2a (notes)
 
 location /health {
   stub_status on;
   access_log off;
 }
 
+<<<<<<< HEAD
 here upstream replace with what you mentioned in httpd block here mentioned 
 backend so replace with that.
 
+=======
+>>>>>>> bed3a2a (notes)
 /usr/share/nginx/html --> default
 
 IP or IP/ --> /usr/share/nginx/html/index.html
 
+<<<<<<< HEAD
 ----------Linux folder structure-----------------------
+=======
+Linux folder structure
+>>>>>>> bed3a2a (notes)
 ----------
 / --> root directory of the OS
 /bin(binaries) --> essential commands are here. ls, cat, grep, etc.
@@ -146,6 +170,7 @@ if not installed, install it
 
 check success or not
 
+<<<<<<< HEAD
 Check first before you install any package
  do u have root access
 
@@ -159,6 +184,13 @@ if uid = 0 this is having root access
 git --> store scripts or programs
 
 
+=======
+git --> store scripts or programs
+
+
+
+
+>>>>>>> bed3a2a (notes)
 / --> frontend website
 /hello --> hello website
 /app --> backend
@@ -168,9 +200,13 @@ m.facebook --> mobile servers
 facebook --> web servers
 
 daws81s.online
+<<<<<<< HEAD
 daws81s.online/hello 
 
 
 -----------------searched reference words---------------------
 
 configure nginx load balancing 
+=======
+daws81s.online/hello 
+>>>>>>> bed3a2a (notes)

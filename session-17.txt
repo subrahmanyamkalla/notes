@@ -1,5 +1,6 @@
 ansible inventory
 -------------------
+<<<<<<< HEAD
 #1 to pick all ungroupe IP's from inventory run below command
 # ansible-playbook -i inventory.ini ungrouped --list-hosts
 
@@ -16,6 +17,8 @@ ansible inventory
 # ansible-playbook -i inventory.ini servers --list-hosts
 
 
+=======
+>>>>>>> bed3a2a (notes)
 ungrouped
 grouped
 group of groups
@@ -90,4 +93,8 @@ loops
 item --> reserved keyword
 
 functions/filters
+<<<<<<< HEAD
 --------------------
+=======
+--------------------
+>>>>>>> bed3a2a (notes)

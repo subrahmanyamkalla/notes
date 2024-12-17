@@ -43,8 +43,11 @@ X -> 1
 
 Linux Administration
 --------------------------
+<<<<<<< HEAD
 ----------see session -5 recap covered this session task---------------
 
+=======
+>>>>>>> bed3a2a (notes)
 sudo su --> super user access
 
 create user
@@ -92,7 +95,11 @@ a user must have atleast one primary and one secondary group
 
 usermod -g ramesh ramesh
 userdel ramesh --> ramesh user and ramesh group both will be deleted
+<<<<<<< HEAD
 userdel -r ramesh (it will delete same user from home directory also so you can create same username after deleted if you want)
+=======
+
+>>>>>>> bed3a2a (notes)
 groupdel
 
 suresh, suresh123
@@ -103,6 +110,7 @@ inform suresh, that his user is creatd
 
 by default, linux OS will not allow password authentication, it will only allow key based authentication
 
+<<<<<<< HEAD
 ----Password base authentication-----
 vim /etc/ssh/sshd_config
 
@@ -114,6 +122,10 @@ now all files will be on suresh name
 
 --------ssh key base authentication for user------
 
+=======
+systemctl restart sshd
+
+>>>>>>> bed3a2a (notes)
 /home/suresh
 
 .ssh --> authorized_keys --> public key
@@ -126,14 +138,20 @@ Ownership
 -------------------
 chown --> change ownership
 
+<<<<<<< HEAD
 chown -R username:username .ssh (it will change ownership from root to user in user system after given permissions.
 
+=======
+>>>>>>> bed3a2a (notes)
 private key, suresh
 
 /home/suresh --> authorized_keys
 
+<<<<<<< HEAD
 chmod 700 .ssh 
 
+=======
+>>>>>>> bed3a2a (notes)
 directory --> 700
 authorized_keys --> 400
 
